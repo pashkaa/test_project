@@ -1,0 +1,136 @@
+.orders__container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.orders__container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.order {
+    width: 410px;
+    height: 70px;
+    border-radius: 5px;
+    border: 1px solid rgb(183, 179, 179);
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    background-color: #fff;
+}
+
+.order__buttons {
+    border: 2px solid rgb(183, 179, 179);
+    border-radius: 50%;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 5px;
+}
+
+.order__buttons img {
+    width: 18px;
+    height: 18px;
+}
+
+.order__buttons:hover {
+    transition: 0.3s;
+    border: 3px solid #8bc34a;
+    background-color: #fff;
+}
+
+.order__products {
+    width: 80px;
+    margin-left: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order__products_span1 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.order__date_span1 {
+    font-size: 12px;
+}
+
+.order__products_span2 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.order__date {
+    width: 200px;
+    margin-left: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order__empty {
+    width: 100px;
+}
+
+.order__transition {
+    opacity: 1;
+    transition: opacity 500ms;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 32px;
+    background-color: #cfd8dc;
+}
+
+.order__transition2 {
+    opacity: 0;
+    transition: opacity 500ms;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 32px;
+    background-color: #cfd8dc;
+}
+
+.order:hover {
+    
+    & .order__transition {
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+.orders__container2__close {
+    width: 50px;
+    height: 50px;
+    position:relative;
+    top: -20px;
+    left: -60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ececec;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 5px 10px 13px -7px #ada8a8, 5px 5px 15px 5px rgba(225, 220, 220, 0);
+}
+
+.orders__container2__close:hover {
+    cursor: pointer;
+    transition: 01s;
+    border: 1px solid #ada8a8;
+}

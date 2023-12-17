@@ -1,0 +1,338 @@
+.orders__container {
+    width: 100%;
+    background-color: #f0f3f5;
+}
+
+.orders__container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 940px;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+.orders__container2__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+    gap: 10px;
+}
+
+.orders__container2__info_paragraph {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.orders__container2__info_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    padding-bottom: 7px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 50%;
+    border: 3px solid #7bab4b;
+    background-color: #8bc34a;
+}
+
+.order__container {
+    width: 1050px;
+    height: 70px;
+    border-radius: 5px;
+    border: 1px solid rgb(183, 179, 179);
+    display: flex;
+    align-items: center;
+}
+
+.order__container__title {
+    min-width: 450px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 30px;
+    align-items: center;
+}
+
+.order__container__title p {
+    margin: 0px;
+    text-decoration: underline 1px solid rgb(183, 179, 179);
+}
+
+.order__container__button {
+    border: 2px solid rgb(183, 179, 179);
+    border-radius: 50%;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 5px;
+}
+
+.order__container__button:hover {
+    transition: 0.3s;
+    border: 3px solid #8bc34a;
+    background-color: #fff;
+}
+
+.order__container__button img {
+    width: 18px;
+    height: 18px;
+}
+
+.order__container__products, .order__container__date, .order__container__price {
+    width: 80px;
+    margin-left: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order__container__date, .order__container__price {
+    width: 150px;
+}
+
+.order__container__products_span1 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.order__container__products_span2 {
+    font-size: 14px;
+}
+
+.order__container__date_span1, .order__container__price_span1 {
+    font-size: 12px;
+}
+
+.order__container__date_span1, .order__container__date_span2, .order__container__price_span1, .order__container__price_span2 {
+    text-align: center;
+    width: 100%;
+}
+
+.order__container__price_span2 {
+    font-size: 16px;
+}
+
+.order__container__delete {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.order__container__delete img {
+    width: 20px;
+    height: 20px;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.4s, visibility 1.4s;
+}
+
+.modal__box {
+    margin-left: 100px;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    border-radius: 15px;
+    transition: transform .8s;
+}
+
+.modal__box_btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(242, 238, 238);
+    color: #b7c5e1;
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    right: -15px;
+    padding-bottom: 5px;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.modal__box_btn:hover {
+    cursor: pointer;
+}
+
+.open {
+    opacity: 1;
+    overflow-y: hidden;
+    visibility: visible;
+}
+
+.modal.open .modal__box {
+    transform: scale(1);
+}
+
+.form {
+    width: 500px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__up {
+    height: 120px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form__down {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 80px;
+    background-color: #7bab4b;
+}
+
+.form__up p {
+    font-size: 17px;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+.form__up__product {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgb(242, 235, 235);
+}
+
+.form__up__product__dot {
+    width: 90px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__up__product__dot div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.form__up__product__image {
+    width: 120px;
+    height: 100%;
+}
+
+.form__up__product__image img {
+    margin-top: 3px;
+    width: 50px;
+    height: 100%;
+}
+
+.form__up__product__info {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__up__product__info_span1 {
+    width: 280px;
+    font-size: 12px;
+    text-decoration: underline 1px solid rgb(203, 200, 200);;
+}
+
+.form__up__product__info_span2 {
+    font-size: 12px;
+    color: #b7c5e1  ;
+}
+
+.form__down {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.form__down__buttons {
+    margin-right: 30px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.form__down__buttons button{
+    border: none;
+}
+
+.form__down__buttons__cancel {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__down__buttons__cancel div {
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
+}
+
+.form__down__buttons__cancel div:hover {
+    cursor: pointer;
+}
+
+.form__down__buttons__delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.form__down__buttons__delete:hover {
+    transition: 1s;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.form__down__buttons__delete img {
+    width: 15px;
+    height: 15px;
+}
+
+.form__down__buttons__delete div {
+    padding-left: 10px;
+    font-weight: 700;
+    color: #e8364f;
+    background-color: transparent;
+}
+
+.form__down__buttons__delete:hover {
+    cursor: pointer;
+}
